@@ -252,7 +252,8 @@ body {
         padding: 2rem;
         h1 {
             text-align: center;
-            font-size: 30px;
+            font-size: 20px;
+
         }
         .movieContentContainer {
             margin-top: 1rem;
@@ -273,6 +274,61 @@ body {
 
             .movieContent > img:hover{
                 transform: scale(1.1);
+            }
+        }
+    }
+
+    footer{
+        background: white;
+        .container{
+            text-align: center;
+            padding-top: 2rem;
+            padding-bottom: 1rem;
+
+            .footerTop{
+                h3{
+                    font-size: 16px;
+                }
+
+                img{
+                    margin-top: 10px;
+                    cursor: pointer;
+                }
+            }
+
+            .footerMiddle{
+                margin-top: 1rem;
+                img{
+                    height: 40px;
+                    width: 90px;
+                    cursor: pointer;
+                }
+
+                .footerLinks{
+                    margin-top: 10px;
+                    ul{
+                        display: flex;
+                        justify-content: center;
+                        font-size: 12px;
+
+                        li{
+                            margin-right: 20px;
+                            list-style: none;
+                        }
+
+                        li:hover{
+                            color: #0065E2;
+                            cursor: pointer;
+                        }
+                    }
+                }
+
+                .bottomFooter{
+                    margin-top: 20px;
+                    p{
+                        font-size: 12px;
+                    }
+                }
             }
         }
     }
@@ -372,7 +428,7 @@ body {
                 padding-bottom: 1rem;
 
                 .newContent {
-                    display: block;
+                    display: block; 
                     margin-left: 6%;
 
                     .NewContent {
@@ -391,6 +447,40 @@ body {
 
                     img {
                         width: 100%;
+                    }
+                }
+            }
+        }
+
+        #movies{
+            .movieContentContainer{
+                display: grid;
+                grid-template-columns: auto auto;
+                padding: 0;
+                .movieContent{
+                    text-align: center;
+                    img{
+                        width: 200px;
+                    }
+                }
+            }
+        }
+
+        footer{
+            .container{
+                .footerMiddle{
+                    .footerLinks{
+                        ul{
+                            display: grid;
+                            grid-template-columns: repeat(5, auto);
+                            width: 70%;
+                            margin-left: auto;
+                            margin-right: auto;
+
+                            li{
+                                margin-top: 10px;
+                            }
+                        }
                     }
                 }
             }

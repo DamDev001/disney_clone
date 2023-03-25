@@ -208,7 +208,7 @@ body {
 }
 .disney #movies h1 {
   text-align: center;
-  font-size: 30px;
+  font-size: 20px;
 }
 .disney #movies .movieContentContainer {
   margin-top: 1rem;
@@ -227,6 +227,51 @@ body {
 }
 .disney #movies .movieContentContainer .movieContent > img:hover {
   transform: scale(1.1);
+}
+.disney footer {
+  background: white;
+}
+.disney footer .container {
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+.disney footer .container .footerTop h3 {
+  font-size: 16px;
+}
+.disney footer .container .footerTop img {
+  margin-top: 10px;
+  cursor: pointer;
+}
+.disney footer .container .footerMiddle {
+  margin-top: 1rem;
+}
+.disney footer .container .footerMiddle img {
+  height: 40px;
+  width: 90px;
+  cursor: pointer;
+}
+.disney footer .container .footerMiddle .footerLinks {
+  margin-top: 10px;
+}
+.disney footer .container .footerMiddle .footerLinks ul {
+  display: flex;
+  justify-content: center;
+  font-size: 12px;
+}
+.disney footer .container .footerMiddle .footerLinks ul li {
+  margin-right: 20px;
+  list-style: none;
+}
+.disney footer .container .footerMiddle .footerLinks ul li:hover {
+  color: #0065E2;
+  cursor: pointer;
+}
+.disney footer .container .footerMiddle .bottomFooter {
+  margin-top: 20px;
+}
+.disney footer .container .footerMiddle .bottomFooter p {
+  font-size: 12px;
 }
 
 @media (max-width: 768px) {
@@ -315,5 +360,26 @@ body {
   }
   .disney #whatNew .container .supportTeam img {
     width: 100%;
+  }
+  .disney #movies .movieContentContainer {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 0;
+  }
+  .disney #movies .movieContentContainer .movieContent {
+    text-align: center;
+  }
+  .disney #movies .movieContentContainer .movieContent img {
+    width: 200px;
+  }
+  .disney footer .container .footerMiddle .footerLinks ul {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .disney footer .container .footerMiddle .footerLinks ul li {
+    margin-top: 10px;
   }
 }/*# sourceMappingURL=style.css.map */
