@@ -1,0 +1,319 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #F1F2F3;
+}
+
+.disney header nav {
+  display: flex;
+  align-items: center;
+  padding: 0.8rem 1rem;
+  background: white;
+}
+.disney header nav .logo img {
+  height: 40px;
+  width: 90px;
+  cursor: pointer;
+}
+.disney header nav ul {
+  display: flex;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 790;
+  margin-left: 2rem;
+}
+.disney header nav ul li {
+  margin-right: 30px;
+  list-style: none;
+  cursor: pointer;
+}
+.disney header nav ul li:hover {
+  color: #0077DA;
+  transition: 0.4s;
+}
+.disney header nav .toggle {
+  display: none;
+}
+.disney #heroSection .heroimage {
+  position: relative;
+}
+.disney #heroSection .heroimage img {
+  width: 100%;
+}
+.disney #heroSection .heroText {
+  position: absolute;
+  top: 20%;
+  width: 30%;
+  left: 5%;
+}
+.disney #heroSection .heroText img {
+  width: 100%;
+}
+.disney #heroSection .heroText p {
+  text-align: center;
+  font-size: 16px;
+  color: white;
+  margin-top: 10px;
+  line-height: 25px;
+}
+.disney #heroSection .heroText .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.disney #heroSection .heroText .btn button {
+  margin-top: 20px;
+  padding: 16px 50px;
+  font-size: 15px;
+  font-weight: 600;
+  background: white;
+  border-radius: 50px;
+  border: 0;
+  color: black;
+  cursor: pointer;
+}
+.disney .popularMovie {
+  width: 88%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2rem;
+}
+.disney .popularMovie .container {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 20px;
+}
+.disney .popularMovie .container .content:nth-child(1) {
+  background: transparent;
+}
+.disney .popularMovie .container .content {
+  background: white;
+  text-decoration: none;
+  color: black;
+}
+.disney .popularMovie .container .content .contentImage {
+  width: 100%;
+}
+.disney .popularMovie .container .content .contentImage img {
+  width: 100%;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.disney .popularMovie .container .content .contentDetail {
+  padding: 25px;
+}
+.disney .popularMovie .container .content .contentDetail h3 {
+  font-weight: lighter;
+  font-size: 18px;
+}
+.disney .popularMovie .container .content .contentDetail p {
+  margin-top: 10px;
+  font-size: 15px;
+  margin-bottom: 2rem;
+}
+.disney .popularMovie .container .content .contentDetail b {
+  font-size: 11px;
+  font-weight: 800;
+}
+.disney #whatNew {
+  width: 100%;
+  height: 90vh;
+  background: #030C40;
+  margin-top: 2rem;
+}
+.disney #whatNew .container {
+  width: 88%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2rem;
+}
+.disney #whatNew .container h2 {
+  text-align: center;
+  color: white;
+  font-size: 25px;
+}
+.disney #whatNew .container .newContent {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 10px;
+}
+.disney #whatNew .container .newContent .NewContent {
+  text-decoration: none;
+}
+.disney #whatNew .container .newContent .NewContent .imageContainer {
+  width: 300px;
+  height: 215px;
+  overflow: hidden;
+}
+.disney #whatNew .container .newContent .NewContent .imageContainer img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  cursor: pointer;
+  transition: 0.2s linear;
+  border-radius: 4px;
+}
+.disney #whatNew .container .newContent .NewContent .imageContainer img:hover {
+  transform: scale(1.1);
+}
+.disney #whatNew .container .newContent .NewContent p {
+  color: white;
+  margin-top: -1rem;
+}
+.disney #whatNew .container .supportTeam {
+  margin-top: 4rem;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.disney #whatNew .container .supportTeam img {
+  width: 100%;
+}
+.disney #whatNew .container .supportTeam .other {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+.disney #whatNew .container .supportTeam .other .action {
+  text-align: center;
+}
+.disney #whatNew .container .supportTeam .other .action button {
+  margin-top: 20px;
+  padding: 16px 50px;
+  font-size: 15px;
+  font-weight: 600;
+  background: #0065E2;
+  border-radius: 50px;
+  border: 0;
+  color: white;
+  letter-spacing: 2px;
+  cursor: pointer;
+  display: block;
+  margin-bottom: 1.5rem;
+}
+.disney #whatNew .container .supportTeam .other .action span {
+  color: white;
+  font-size: 12px;
+}
+.disney #movies {
+  padding: 2rem;
+}
+.disney #movies h1 {
+  text-align: center;
+  font-size: 30px;
+}
+.disney #movies .movieContentContainer {
+  margin-top: 1rem;
+  display: flex;
+  grid-gap: 10px;
+}
+.disney #movies .movieContentContainer .movieContent {
+  overflow: hidden;
+}
+.disney #movies .movieContentContainer .movieContent p {
+  margin-top: 10px;
+}
+.disney #movies .movieContentContainer .movieContent > img {
+  width: 100%;
+  transition: 0.2s linear;
+}
+.disney #movies .movieContentContainer .movieContent > img:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  .disney header nav {
+    position: relative;
+  }
+  .disney header nav .toggle {
+    display: block;
+    cursor: pointer;
+  }
+  .disney header nav .toggle span {
+    display: block;
+    width: 20px;
+    height: 3px;
+    background: black;
+    margin: 5px;
+  }
+  .disney header nav .active {
+    position: relative;
+    transition: 1s;
+  }
+  .disney header nav .active span:nth-child(1) {
+    transform: rotate(50deg);
+    position: absolute;
+  }
+  .disney header nav .active span:nth-child(2) {
+    transform: rotate(-50deg);
+  }
+  .disney header nav .logo {
+    margin-left: 35%;
+  }
+  .disney header nav ul {
+    position: absolute;
+    display: none;
+    background: white;
+    width: 100%;
+    margin-top: 1rem;
+    z-index: 1;
+    left: -32px;
+    top: 3rem;
+  }
+  .disney header nav ul li {
+    margin: 20px;
+    border-bottom: 1px solid lightgrey;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+  }
+  .disney header nav .activeUl {
+    display: block;
+  }
+  .disney #heroSection .heroText {
+    position: relative;
+    background: black;
+    width: 100%;
+    left: 0;
+    margin-top: -5px;
+    padding-bottom: 20px;
+  }
+  .disney #heroSection .heroText img {
+    width: 50%;
+    margin-left: 25%;
+  }
+  .disney .popularMovie .container {
+    display: block;
+  }
+  .disney #whatNew {
+    height: auto;
+  }
+  .disney #whatNew .container {
+    padding: 0;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+  }
+  .disney #whatNew .container .newContent {
+    display: block;
+    margin-left: 6%;
+  }
+  .disney #whatNew .container .newContent .NewContent .imageContainer {
+    margin-top: 30px;
+  }
+  .disney #whatNew .container .newContent .NewContent p {
+    margin-top: -35px;
+  }
+  .disney #whatNew .container .supportTeam {
+    width: 100%;
+  }
+  .disney #whatNew .container .supportTeam img {
+    width: 100%;
+  }
+}/*# sourceMappingURL=style.css.map */

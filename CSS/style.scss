@@ -1,0 +1,399 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #F1F2F3;
+}
+
+.disney {
+    header {
+        nav {
+            display: flex;
+            align-items: center;
+            padding: 0.8rem 1rem;
+            background: white;
+
+            .logo {
+                img {
+                    height: 40px;
+                    width: 90px;
+                    cursor: pointer;
+                }
+            }
+
+            ul {
+                display: flex;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 14px;
+                font-weight: 790;
+                margin-left: 2rem;
+
+                li {
+                    margin-right: 30px;
+                    list-style: none;
+                    cursor: pointer;
+                }
+
+                li:hover {
+                    color: #0077DA;
+                    transition: 0.4s;
+                }
+            }
+
+            .toggle {
+                display: none;
+            }
+        }
+
+    }
+
+    #heroSection {
+        .heroimage {
+            position: relative;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .heroText {
+            position: absolute;
+            top: 20%;
+            width: 30%;
+            left: 5%;
+
+            img {
+                width: 100%;
+            }
+
+            p {
+                text-align: center;
+                font-size: 16px;
+                color: white;
+                margin-top: 10px;
+                line-height: 25px;
+            }
+
+            .btn {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                button {
+                    margin-top: 20px;
+                    padding: 16px 50px;
+                    font-size: 15px;
+                    font-weight: 600;
+                    background: white;
+                    border-radius: 50px;
+                    border: 0;
+                    color: black;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    .popularMovie {
+        width: 88%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 2rem;
+
+        .container {
+            display: grid;
+            grid-template-columns: auto auto;
+            grid-gap: 20px;
+
+            .content:nth-child(1) {
+                background: transparent;
+            }
+
+            .content {
+                background: white;
+                text-decoration: none;
+                color: black;
+
+                .contentImage {
+                    width: 100%;
+
+                    img {
+                        width: 100%;
+                        height: 300px;
+                        object-fit: cover;
+                    }
+                }
+
+                .contentDetail {
+                    padding: 25px;
+
+                    h3 {
+                        font-weight: lighter;
+                        font-size: 18px;
+                    }
+
+                    p {
+                        margin-top: 10px;
+                        font-size: 15px;
+                        margin-bottom: 2rem;
+                    }
+
+                    b {
+                        font-size: 11px;
+                        font-weight: 800;
+                    }
+                }
+            }
+        }
+    }
+
+    #whatNew {
+        width: 100%;
+        height: 90vh;
+        background: #030C40;
+        margin-top: 2rem;
+
+        .container {
+            width: 88%;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 2rem;
+
+            h2 {
+                text-align: center;
+                color: white;
+                font-size: 25px;
+            }
+
+            .newContent {
+                margin-top: 2rem;
+                display: grid;
+                grid-template-columns: auto auto auto;
+                grid-gap: 10px;
+
+                .NewContent {
+                    text-decoration: none;
+
+                    .imageContainer {
+                        width: 300px;
+                        height: 215px;
+                        overflow: hidden;
+
+                        img {
+                            width: 100%;
+                            object-fit: cover;
+                            cursor: pointer;
+                            transition: .2s linear;
+                            border-radius: 4px;
+                        }
+
+                        img:hover {
+                            transform: scale(1.1);
+                        }
+                    }
+
+                    p {
+                        color: white;
+                        margin-top: -1rem
+                    }
+
+                }
+            }
+
+            .supportTeam {
+                margin-top: 4rem;
+                width: 70%;
+                margin-left: auto;
+                margin-right: auto;
+
+                img {
+                    width: 100%;
+                }
+
+                .other {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-top: 1rem;
+
+                    .action {
+                        text-align: center;
+
+                        button {
+                            margin-top: 20px;
+                            padding: 16px 50px;
+                            font-size: 15px;
+                            font-weight: 600;
+                            background: #0065E2;
+                            border-radius: 50px;
+                            border: 0;
+                            color: white;
+                            letter-spacing: 2px;
+                            cursor: pointer;
+                            display: block;
+                            margin-bottom: 1.5rem;
+                        }
+
+                        span {
+                            color: white;
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    #movies {
+        padding: 2rem;
+        h1 {
+            text-align: center;
+            font-size: 30px;
+        }
+        .movieContentContainer {
+            margin-top: 1rem;
+            display: flex;
+            grid-gap: 10px;
+
+            .movieContent{
+                overflow: hidden;
+
+                p{
+                    margin-top: 10px;
+                }
+            }
+            .movieContent > img{
+                width: 100%;
+                transition: .2s linear;
+            }
+
+            .movieContent > img:hover{
+                transform: scale(1.1);
+            }
+        }
+    }
+}
+
+
+@media(max-width: 768px) {
+    .disney {
+        header {
+            nav {
+                position: relative;
+
+                .toggle {
+                    display: block;
+                    cursor: pointer;
+
+                    span {
+                        display: block;
+                        width: 20px;
+                        height: 3px;
+                        background: black;
+                        margin: 5px;
+                    }
+
+                }
+
+                .active {
+                    position: relative;
+                    transition: 1s;
+
+                    span:nth-child(1) {
+                        transform: rotate(50deg);
+                        position: absolute;
+                    }
+
+                    span:nth-child(2) {
+                        transform: rotate(-50deg);
+                    }
+                }
+
+                .logo {
+                    margin-left: 35%;
+                }
+
+                ul {
+                    position: absolute;
+                    display: none;
+                    background: white;
+                    width: 100%;
+                    margin-top: 1rem;
+                    z-index: 1;
+                    left: -32px;
+                    top: 3rem;
+
+                    li {
+                        margin: 20px;
+                        border-bottom: 1px solid lightgrey;
+                        padding-bottom: 1rem;
+                        padding-left: 1rem;
+                    }
+                }
+
+                .activeUl {
+                    display: block;
+                }
+            }
+        }
+
+        #heroSection {
+            .heroText {
+                position: relative;
+                background: black;
+                width: 100%;
+                left: 0;
+                margin-top: -5px;
+                padding-bottom: 20px;
+
+                img {
+                    width: 50%;
+                    margin-left: 25%;
+                }
+            }
+        }
+
+        .popularMovie {
+            .container {
+                display: block;
+            }
+        }
+
+        #whatNew {
+            height: auto;
+
+            .container {
+                padding: 0;
+                padding-top: 2rem;
+                padding-bottom: 1rem;
+
+                .newContent {
+                    display: block;
+                    margin-left: 6%;
+
+                    .NewContent {
+                        .imageContainer {
+                            margin-top: 30px;
+                        }
+
+                        p {
+                            margin-top: -35px;
+                        }
+                    }
+                }
+
+                .supportTeam {
+                    width: 100%;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
